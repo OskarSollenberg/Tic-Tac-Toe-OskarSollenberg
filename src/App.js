@@ -104,7 +104,7 @@ export default function Game() {
         }
         return (
             <li key={move}>
-                <button className="historyBtn" onClick={() => jumpTo(move)}>
+                <button className="history-btn" onClick={() => jumpTo(move)}>
                     {description}
                 </button>
             </li>

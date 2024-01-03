@@ -6,6 +6,10 @@
 body {
     font-family: sans-serif;
     background: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 h1 {
     font-size: 22px;
@@ -44,14 +48,6 @@ code {
     text-align: center;
 }
 
-@media (max-width: 30rem) {
-    .square {
-        height: 5rem;
-        width: 5rem;
-        font-size: 4rem;
-    }
-}
-
 .board-row:after {
     clear: both;
     content: "";
@@ -67,8 +63,6 @@ code {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
     gap: 3rem;
     padding: 2rem;
 }
@@ -84,10 +78,33 @@ code {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    max-width: 23rem;
 }
-.historyBtn {
+.history-btn {
     width: 5rem;
     height: 2.5rem;
     border: none;
     background: sandybrown;
+}
+
+@media (max-width: 30rem) {
+    .square {
+        height: 4rem;
+        width: 4rem;
+        font-size: 3rem;
+    }
+}
+@media (max-width: 30rem) {
+    .history-list {
+        max-width: 15rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    .history-btn {
+        font-size: 0.65rem;
+
+        width: 4rem;
+        height: 2rem;
+    }
 }
