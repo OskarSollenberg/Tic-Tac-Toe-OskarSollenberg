@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    background: black;
+}
+h1 {
+    font-size: 22px;
+}
+h2 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 12px;
+}
+code {
+    font-size: 1.2em;
+}
+
+.square {
+    color: salmon;
+    background-color: black;
+    border: 0.5rem solid salmon;
+    margin-right: -0.5rem;
+    margin-top: -0.5rem;
+    float: left;
+    font-size: 8rem;
+    font-weight: bold;
+    line-height: 34px;
+    height: 8rem;
+    width: 8rem;
+    text-align: center;
+}
+
+@media (max-width: 30rem) {
+    .square {
+        height: 5rem;
+        width: 5rem;
+        font-size: 4rem;
+    }
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.status {
+    margin-bottom: 2rem;
+}
+.game {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    gap: 3rem;
+    padding: 2rem;
+}
+.game-info {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.history-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.historyBtn {
+    width: 5rem;
+    height: 2.5rem;
+    border: none;
+    background: sandybrown;
+}
